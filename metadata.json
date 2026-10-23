@@ -1,0 +1,6 @@
+{
+  "name": "ABM Dance & Music Studio",
+  "description": "An all-in-one student and admission platform for ABM Dance & Music Studio featuring interactive schedules, program registration, instructor bios, pricing plans, contact portals, real-time class bookings, and secure payment simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
