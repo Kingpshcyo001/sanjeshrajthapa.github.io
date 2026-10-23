@@ -27,7 +27,7 @@ document.getElementById("menuToggle").addEventListener("click", () => nav.classL
 nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
 
 // ---------- Typing effect ----------
-const words = ["student", "learner", "web developer", "problem solver", "dreamer"];
+const words = ["musician", "content creator", "computer operator", "music teacher", "DJ", "BBS student"];
 const typed = document.getElementById("typed");
 let wordIndex = 0, charIndex = 0, deleting = false;
 
@@ -52,17 +52,14 @@ function type() {
 }
 type();
 
-// ---------- Scroll reveal + skill bars ----------
+// ---------- Scroll reveal ----------
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     entry.target.classList.add("visible");
-    entry.target.querySelectorAll(".fill").forEach(bar => {
-      bar.style.width = bar.dataset.level + "%";
-    });
     observer.unobserve(entry.target);
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
 
@@ -72,8 +69,7 @@ window.addEventListener("scroll", () => toTop.classList.toggle("show", window.sc
 toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
 // ---------- Contact form (opens your email app) ----------
-// Change this to your real email address:
-const MY_EMAIL = "your-email@example.com";
+const MY_EMAIL = "sanjeshrajthapa1222@gmail.com";
 
 document.getElementById("contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
