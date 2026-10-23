@@ -1,17 +1,130 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABM Dance & Music Studio — Student Portal & Admissions</title>
-    <!-- Premium Google Fonts pairing -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-  </head>
-  <body class="bg-zinc-950">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjesh Raj Thapa</title>
+  <meta name="description" content="Personal website of Sanjesh Raj Thapa" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
+  <header class="site-header">
+    <a href="#home" class="logo">Sanjesh<span>.</span></a>
+    <nav id="nav" class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+      <button id="menuToggle" class="icon-btn menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Sanjesh Raj Thapa</h1>
+      <p class="typing">I am a <span id="typed"></span><span class="cursor">|</span></p>
+      <p class="lead">Welcome to my personal corner of the internet — a place to share who I am, what I'm learning, and what I'm building.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">See my work</a>
+        <a href="#contact" class="btn">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div class="avatar" aria-hidden="true">SRT</div>
+        <div>
+          <p>
+            Hi! I'm <strong>Sanjesh Raj Thapa</strong>. I'm curious about technology, enjoy learning new things,
+            and like turning ideas into real projects. This website is my personal space to keep track of my
+            journey.
+          </p>
+          <p>
+            Edit this paragraph in <code>index.html</code> to tell your own story — where you're from,
+            what you study or do, and what you love.
+          </p>
+          <ul class="facts">
+            <li><strong>Name:</strong> Sanjesh Raj Thapa</li>
+            <li><strong>Location:</strong> Nepal</li>
+            <li><strong>Interests:</strong> Technology, Learning, Creating</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-top"><span>HTML</span><span>90%</span></div>
+          <div class="bar"><div class="fill" data-level="90"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>CSS</span><span>80%</span></div>
+          <div class="bar"><div class="fill" data-level="80"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
+          <div class="bar"><div class="fill" data-level="70"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-top"><span>Problem Solving</span><span>85%</span></div>
+          <div class="bar"><div class="fill" data-level="85"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Personal Website</h3>
+          <p>This very site, built with plain HTML, CSS and JavaScript.</p>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Describe something you've made or want to make here.</p>
+          <span class="tag">Idea</span>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Add another project, school work, or hobby here.</p>
+          <span class="tag">Coming soon</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p>Want to say hello? Leave a note below — it opens in your email app.</p>
+      <form id="contactForm" class="form">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn primary">Send message</button>
+        <p id="formStatus" class="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Sanjesh Raj Thapa. Made for personal use.</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
