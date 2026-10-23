@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sanjesh Raj Thapa</title>
-  <meta name="description" content="Personal website of Sanjesh Raj Thapa" />
+  <meta name="description" content="Personal website of Sanjesh Raj Thapa — Musician, Content Creator and Computer Operator" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,8 +13,9 @@
     <a href="#home" class="logo">Sanjesh<span>.</span></a>
     <nav id="nav" class="nav">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
       <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-actions">
@@ -28,10 +29,11 @@
     <section id="home" class="hero">
       <p class="eyebrow">Hello, I'm</p>
       <h1>Sanjesh Raj Thapa</h1>
+      <p class="roles">Musician &nbsp;/&nbsp; Content Creator &nbsp;/&nbsp; Computer Operator</p>
       <p class="typing">I am a <span id="typed"></span><span class="cursor">|</span></p>
-      <p class="lead">Welcome to my personal corner of the internet — a place to share who I am, what I'm learning, and what I'm building.</p>
+      <p class="lead">Welcome to my personal website — a place for my music, my work, and my journey.</p>
       <div class="hero-buttons">
-        <a href="#projects" class="btn primary">See my work</a>
+        <a href="#experience" class="btn primary">My experience</a>
         <a href="#contact" class="btn">Get in touch</a>
       </div>
     </section>
@@ -40,75 +42,133 @@
     <section id="about" class="section reveal">
       <h2>About Me</h2>
       <div class="about-grid">
-        <div class="avatar" aria-hidden="true">SRT</div>
+        <div class="avatar">
+          <img src="photo.jpg" alt="Sanjesh Raj Thapa" onerror="this.remove()" />
+          <span>SRT</span>
+        </div>
         <div>
           <p>
-            Hi! I'm <strong>Sanjesh Raj Thapa</strong>. I'm curious about technology, enjoy learning new things,
-            and like turning ideas into real projects. This website is my personal space to keep track of my
-            journey.
+            Hi! I'm <strong>Sanjesh Raj Thapa</strong> — a musician, content creator and computer operator from Gaur, Nepal.
+            I started out as a DJ in Kathmandu, spent three years teaching music and other subjects, and I now work as a
+            computer operator at Gaur Nagarpalika. Alongside work, I'm studying for my BBS.
           </p>
           <p>
-            Edit this paragraph in <code>index.html</code> to tell your own story — where you're from,
-            what you study or do, and what you love.
+            Music is my passion: I play the guitar, drums, ukulele, bass guitar and piano, and I enjoy creating
+            content and producing music on the computer.
           </p>
           <ul class="facts">
             <li><strong>Name:</strong> Sanjesh Raj Thapa</li>
-            <li><strong>Location:</strong> Nepal</li>
-            <li><strong>Interests:</strong> Technology, Learning, Creating</li>
+            <li><strong>Location:</strong> Gaur, Nepal</li>
+            <li><strong>Now:</strong> Computer Operator &amp; BBS student</li>
+            <li><strong>Loves:</strong> Music, Content Creation, Teaching</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section reveal">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill">
-          <div class="skill-top"><span>HTML</span><span>90%</span></div>
-          <div class="bar"><div class="fill" data-level="90"></div></div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-icon">💻</div>
+          <div class="t-body">
+            <span class="t-date">2026 – Present</span>
+            <h3>Computer Operator</h3>
+            <p>Gaur Nagarpalika, Ward No. 1 Office</p>
+          </div>
         </div>
-        <div class="skill">
-          <div class="skill-top"><span>CSS</span><span>80%</span></div>
-          <div class="bar"><div class="fill" data-level="80"></div></div>
+        <div class="t-item">
+          <div class="t-icon">🎓</div>
+          <div class="t-body">
+            <span class="t-date">2023 – 2026</span>
+            <h3>Music / Subject Teacher</h3>
+            <p>International Bal Academy School</p>
+          </div>
         </div>
-        <div class="skill">
-          <div class="skill-top"><span>JavaScript</span><span>70%</span></div>
-          <div class="bar"><div class="fill" data-level="70"></div></div>
-        </div>
-        <div class="skill">
-          <div class="skill-top"><span>Problem Solving</span><span>85%</span></div>
-          <div class="bar"><div class="fill" data-level="85"></div></div>
+        <div class="t-item">
+          <div class="t-icon">🎧</div>
+          <div class="t-body">
+            <span class="t-date">2018 – 2020</span>
+            <h3>DJ</h3>
+            <p>Sabin Sounds, Sankhamul, Kathmandu</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section reveal">
-      <h2>Projects</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+      <h2>Education History</h2>
       <div class="cards">
         <article class="card">
-          <h3>Personal Website</h3>
-          <p>This very site, built with plain HTML, CSS and JavaScript.</p>
-          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          <span class="tag">Class of 2025</span>
+          <h3>B.B.S</h3>
+          <p>Gauri Shankar Yadav Rautahat Campus</p>
+          <span class="tag live">Currently running</span>
         </article>
         <article class="card">
-          <h3>Project Two</h3>
-          <p>Describe something you've made or want to make here.</p>
-          <span class="tag">Idea</span>
+          <span class="tag">Class of 2022</span>
+          <h3>+2 Management</h3>
+          <p>Gauri Shankar Yadav Rautahat Campus<br />Management (Computer) — Passed +2 Examination</p>
         </article>
         <article class="card">
-          <h3>Project Three</h3>
-          <p>Add another project, school work, or hobby here.</p>
-          <span class="tag">Coming soon</span>
+          <span class="tag">Class of 2016</span>
+          <h3>S.L.C</h3>
+          <p>Mitra Memorial Higher Secondary English Boarding School<br />Passed SLC Examination</p>
         </article>
       </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2>Relevant Skills</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>🎵 Music</h3>
+          <div class="chips">
+            <span class="chip">DAW</span>
+            <span class="chip">Digital Instruments</span>
+            <span class="chip">Guitar</span>
+            <span class="chip">Drums</span>
+            <span class="chip">Ukulele</span>
+            <span class="chip">Bass Guitar</span>
+            <span class="chip">Piano</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>🖥️ Computer</h3>
+          <div class="chips">
+            <span class="chip">MS Excel (Intermediate)</span>
+            <span class="chip">MS Word (Intermediate)</span>
+            <span class="chip">MS Access (Intermediate)</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>🎬 Creative</h3>
+          <div class="chips">
+            <span class="chip">Basic Photoshop</span>
+            <span class="chip">Basic Video Editing</span>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="sub">Volunteer Work &amp; Affiliations</h2>
+      <ul class="volunteer">
+        <li>Volunteered at many functions in Gaur and Kathmandu.</li>
+        <li>Volunteer in collecting census data, working with Gaur Nagarpalika.</li>
+      </ul>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section reveal">
       <h2>Contact</h2>
-      <p>Want to say hello? Leave a note below — it opens in your email app.</p>
+      <ul class="contact-list">
+        <li>✉️ <a href="mailto:sanjeshrajthapa1222@gmail.com">sanjeshrajthapa1222@gmail.com</a></li>
+        <li>📞 <a href="tel:+9779842167992">+977 9842167992</a></li>
+        <li>📞 <a href="tel:+9779746653179">+977 9746653179</a></li>
+      </ul>
+      <p>Or leave a note below — it opens in your email app.</p>
       <form id="contactForm" class="form">
         <input type="text" id="name" placeholder="Your name" required />
         <input type="email" id="email" placeholder="Your email" required />
